@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#050b1a;
+  color:white;
+  scroll-behavior: smooth;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  background: url("image/bg.png") no-repeat center center/cover;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  top:0;
+  left:0;
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+.hero-content h1{
+  font-size:48px;
+  color:#4cc9f0;
+}
+
+.hero-content p{
+  font-size:18px;
+  color:#aaa;
+}
+
+.btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:#4cc9f0;
+  color:black;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #4cc9f0;
+}
+
+section{
+  padding:70px 10%;
+}
+
+h2{
+  margin-bottom:25px;
+  color:#4cc9f0;
+}
+
+.skills span{
+  display:inline-block;
+  background:#0a1f44;
+  padding:10px 15px;
+  margin:5px;
+  border-radius:20px;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:#0a1f44;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+  text-decoration:none;
+  color:white;
+}
+
+.project-card{
+  background:#0a1f44;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+  text-decoration:none;
+  color:white;
+  position:relative;
+}
+
+.project-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.project-info{
+  padding:15px;
+}
+
+.project-info h3{
+  color:#4cc9f0;
+  margin-bottom:8px;
+}
+
+.project-info p{
+  font-size:14px;
+  color:#bbb;
+}
+
+.project-card:hover{
+  transform:translateY(-12px) scale(1.04);
+  box-shadow:0 0 25px rgba(76, 201, 240, 0.7);
+}
+
+.project-card:hover img{
+  transform:scale(1.1);
+}
+
+.contact-icons{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin-top:20px;
+}
+
+.contact-icons a{
+  color:white;
+  font-size:45px;
+  transition:0.3s;
+}
+
+.contact-icons a:hover{
+  color:#4cc9f0;
+  transform:scale(1.2);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Mahmoud Abo Eldahab</h1>
+    <p>Front-End Developer | Flutter & Web</p>
+  </div>
+</div>
+
+<!-- About -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    Hey! I'm a Front-End dev who loves making websites look awesome and work super smooth. I turn cool designs into real websites with HTML, CSS, JavaScript, and even Flutter for web.
+  </p>
+</section>
+
+<!-- Skills -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Java</span>
+    <span>C++</span>
+    <span>Flutter</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <a href="https://aboeldahabm886-dotcom.github.io/LearnGate/login.html" target="_blank" class="project-card">
+      <img src="image/learngate.png">
+      <div class="project-info">
+        <h3>LearnGate</h3>
+        <p>Interactive learning platform with clean UI.</p>
+      </div>
+    </a>
+
+    <a href="https://alpha30-pixel.github.io/artovinci/" target="_blank" class="project-card">
+      <img src="image/artovinci.png">
+      <div class="project-info">
+        <h3>ARTOVINCI</h3>
+        <p>The best cafe for games and entertainment; enjoy a fun atmosphere with your friends.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+  <div class="contact-icons">
+    <a href="https://www.facebook.com/mahmoud.abo.eldahab.58040" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/01119952415" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/aboeldahab415/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/aboeldahabm886-dotcom" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:aboeldahabm886@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mahmoud Abo Eldahab
+</footer>
+
+</body>
+</html>
